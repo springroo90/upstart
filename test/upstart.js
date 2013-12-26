@@ -38,7 +38,7 @@ describe('upstart', function(){
     it('should call start service', function(done){
       co(function*(){
         yield upstart.start('service');
-        command.should.eql('start service');
+        command.should.eql('/sbin/start service');
         done();
       })();
     })
@@ -48,7 +48,7 @@ describe('upstart', function(){
     it('should stop the service', function(done){
       co(function*(){
         yield upstart.stop('service');
-        command.should.eql('stop service');
+        command.should.eql('/sbin/stop service');
         done();
       })();
     })
@@ -58,7 +58,7 @@ describe('upstart', function(){
     it('should restart the service', function(done){
       co(function*(){
         yield upstart.restart('service');
-        command.should.eql('restart service');
+        command.should.eql('/sbin/restart service');
         done();
       })();
     })
@@ -68,7 +68,7 @@ describe('upstart', function(){
     it('should reload the service', function(done){
       co(function*(){
         yield upstart.reload('service');
-        command.should.eql('reload service');
+        command.should.eql('/sbin/reload service');
         done();
       })();
     })
