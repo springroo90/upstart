@@ -1,4 +1,3 @@
-
 # upstart
 
   `upstart` wrapper.
@@ -6,7 +5,7 @@
 ## Installation
 
 ```bash
-  $ npm install upstart
+  $ npm install configure-upstart
 ```
 
 ## API
